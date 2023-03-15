@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validator</title>
+    <script>  
+        function matchpw() {  
+          var pwd1 = document.getElementById("pw1");  
+          var pwd2 = document.getElementById("pw2");  
+          if(pwd1.value != pwd2.value)  
+          {   
+            alert("Passwords did not match");
+          } else {  
+            alert("Password created successfully"); 
+          }  
+        }  
+        </script> 
+</head>
+<body class="bg-purple-500">
+    <center class="mt-28">
+        <h1 class="text-3xl font-bold">Password Validator</h1>
+    </center>
+    <center>
+   <div class="bg-white mx-auto mr-10 ml-10 mt-20 rounded-3xl py-10 lg:ml-96 lg:mr-96">
+    <div>
+    <p class="text-lg pr-28">Password</p>
+    <input class="rounded-2xl mr-3 border-2 border-black"  type="password" id="pw1">
+    <p class="text-lg pr-11 mt-2">Confirm Password</p>
+    <input class="rounded-2xl mr-3 border-2 border-black" type="password" id="pw2">
+    </div>
+    <button class="text-xl font-bold text-white bg-purple-500 py-2 px-20 rounded-3xl hover:bg-purple-600 mt-7" type="submit" onclick="matchpw()">SUBMIT</button>
+   </div>
+    </center>
+</body>
+</html>
